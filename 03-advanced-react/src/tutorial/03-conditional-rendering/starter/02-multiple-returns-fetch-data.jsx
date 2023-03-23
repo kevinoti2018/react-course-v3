@@ -31,11 +31,12 @@ const MultipleReturnsFetchData = () => {
 }
   if(isError){
   return <h2>Error occured </h2>;}
+  const{avatar_url,company,bio} = user
   return(
     <div style={{width:'400px', height:'auto', padding:'10px',borderRadius:'10px', backgroundColor:'lightblue', display:'flex',flexDirection:'column'}}>
-    <img src={user.avatar_url} alt='user image' style={{width:'100px', borderRadius:'50px'}} />
-    <p>{user.company}</p>
-    <p>{user.bio}</p>
+    <img src={avatar_url} alt='user image' style={{width:'100px', borderRadius:'50px'}} />
+    <p>{company}</p>
+    <p>{bio}</p>
     </div>
   )
 };
